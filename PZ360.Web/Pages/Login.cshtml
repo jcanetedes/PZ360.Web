@@ -1,0 +1,34 @@
+﻿@page "/login"
+@model PZ360.Web.Pages.LoginModel
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Login";
+}
+
+<style>
+    .login {
+        background: linear-gradient(180deg, #0C0D0E 15.1%, rgba(6, 6, 6, 0) 100%);
+    }
+    .branding {
+        vertical-align: middle;
+    }
+    .branding img:first-child {
+        padding-top: 80px;
+    }
+    .branding img:last-child {
+        padding: 30px 60px;
+    }
+    .form {
+        background: rgba(0, 0, 0, 0.75);
+    }
+</style>
+
+<div class="row login">
+    <div class="col-md-6 col-sm-12 branding">
+        <img class="img-fluid" src="~/images/Header.png" />
+        <img class="img-fluid" src="~/images/Doggy.png" />
+    </div>
+    <div class="col-md-6 col-sm-12 form">
+        Form
+    </div>
+</div>
