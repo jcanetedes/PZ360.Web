@@ -62,3 +62,127 @@ a, .btn-link {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+.left-side, .right-side {
+    height: 100vh;
+    width: 100%;
+}
+
+.left-side {
+    background-color: transparent;
+    padding: 30px;
+}
+
+.right-side {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+@media screen and (min-width:768px) {
+    .left-side, .right-side {
+        height: 100vh;
+    }
+}
+
+.sign-in-content {
+    background: linear-gradient(180deg, #0C0D0E 15.1%, rgba(6, 6, 6, 0) 100%);
+}
+
+.form-floating {
+    color: #C1C1C1;
+    margin: 4px;
+}
+.form-floating a{
+    color: #C1C1C1;
+    text-decoration: none;
+}
+
+.form-control {
+    background-color: transparent;
+    border: 0px solid;
+    margin: 0 10px;
+    max-width: 500px;
+}
+
+.form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+    .form form {
+        width: 500px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        color: #C1C1C1;
+    }
+
+        .form form h4 {
+            font-size: 28px;
+            color: #C1C1C1;
+        }
+
+input.form-control:focus {
+    box-shadow: none;
+    background-color: transparent;
+    color: #C1C1C1;
+    border-radius: 0px;
+    border-bottom: 2px solid #00AABC;
+}
+
+input.form-control {
+    box-shadow: none;
+    background-color: transparent;
+    color: #C1C1C1;
+    border-radius: 0px;
+    border-bottom: 2px solid #00AABC;
+}
+.signin-header {
+    color: #C1C1C1;
+}
+
+.sign-in-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 25px;
+    color: #C1C1C1;
+    width: 124px;
+    height: 52px;
+    background: linear-gradient(90deg, #01B4D9 0%, #1770B7 100%);
+    border-radius: 27px;
+}
+.join-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 25px;
+    gap: 5px;
+    color: #C1C1C1;
+    width: 124px;
+    height: 53px;
+    background: linear-gradient(90deg, #363535 0%, #141414 100%);
+    border-radius: 27px;
+}
+.branding{
+   padding: 50px;
+}
+.rounded-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    width: 50px;
+    height: 50px;
+    border: 0px;
+    border-radius: 50%;
+    background-color:transparent;
+}

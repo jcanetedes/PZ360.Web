@@ -18,79 +18,72 @@
         height: 100%;
     }
 
-    .box .row.content {
-        flex: 1 1 auto;
-        background: linear-gradient(180deg, #0C0D0E 15.1%, rgba(6, 6, 6, 0) 100%);
-    }
+        .box .row.content {
+            flex: 1 1 auto;
+            background: linear-gradient(180deg, #0C0D0E 15.1%, rgba(6, 6, 6, 0) 100%);
+        }
 
-    .box .row .branding {
-        padding: 50px;
-    }
+        .box .row .branding {
+            padding: 50px;
+        }
 
-    .box .row .branding img:first-child {
-        padding-bottom: 30px;
-    }
-
-    .form-floating {
-        color: #C1C1C1;
-    }
-
-    .form-control {
-        background-color: transparent;
-        border: 0px solid;
-        margin: 0 10px;
-        max-width: 500px;
-    }
-    .form {
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-    }
-
-    .form form {
-        width: 500px;
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        color: #C1C1C1;
-    }
-
-    .form form span {
-        font-size: 28px;
-        color: #F6F6F6;
-    }
- 
-    input.form-control:focus {
-      box-shadow: none;
-      background-color: transparent;
-      color: #C1C1C1;
-      border-radius: 0px;
-      border-bottom: 2px solid #00AABC;
-    }
-
-    input.form-control {
-      color: #C1C1C1;
-    }
+            .box .row .branding img:first-child {
+                padding-bottom: 30px;
+            }
 
 </style>
-
-<div class="box">
-    <div class="row content align-items-center">
-        <div class="col-md-6 col-sm-12 branding">
+<div class="row no-gutters sign-in-content">
+    <div class="col-md-6 no-gutters">
+        <div class="left-side col-sm-12 branding">
             <img class="img-fluid" src="~/images/Header.png" />
             <img class="img-fluid" src="~/images/Doggy.png" />
         </div>
-        <div class="col-md-6 col-sm-12 form">
+    </div>
+    <div class="col-md-6 no-gutters">
+        <div class="right-side d-flex justify-content-center align-items-center">
             <form class="text-center">
-                <span>Sign In</span>
+                <h4 class="signin-header">Sign In</h4>
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <input type="email" class="form-control w-100" id="floatingInput" placeholder="name@example.com">
                     <label for="floatingInput">Email address</label>
                 </div>
                 <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <input type="password" class="form-control w-100" id="floatingPassword" placeholder="Password">
                     <label for="floatingPassword">Password</label>
+                </div>
+                <div class="form-floating">
+                    <div class="row m-2 p-1">
+                        <div class="col">
+                            <button class="sign-in-button">Sign In</button>
+                        </div>
+                        <div class="col">
+                            <button class="join-button">Join</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-floating">
+                    <div class="row m-2 p-1">
+                        <div class="col">
+                            <button class="rounded-button"><img src="~/images/Google Sign In.png" /></button>
+                        </div>
+                        <div class="col">
+                            <button class="rounded-button"><img src="~/images/Facebook Sign In.png" /></button>
+                        </div>
+                        <div class="col">
+                            <button class="rounded-button"><img src="~/images/Twitter Sign In.png" /></button>
+                        </div>
+
+                        <div class="col">
+                            <button class="rounded-button"><img src="~/images/Linkedin Sign In.png" /></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-floating">
+                    <a href="#"><span>Forgot Password?</span></a>
+                </div>
+
+                <div class="form-floating">
+                    <a href="#"><span>Contact Us</span></a>
                 </div>
             </form>
         </div>
