@@ -92,6 +92,7 @@ a, .btn-link {
 
 .sign-in-content {
     background: linear-gradient(180deg, #0C0D0E 15.1%, rgba(6, 6, 6, 0) 100%);
+    background-image: url("../Images/login-bg2.jpg");
 }
 
 .form-floating {
