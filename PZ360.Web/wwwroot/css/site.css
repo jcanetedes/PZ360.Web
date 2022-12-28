@@ -69,6 +69,7 @@ body {
     margin: 0;
 }
 
+/*Login Page*/
 .left-side, .right-side {
     height: 100vh;
     width: 100%;
@@ -206,12 +207,13 @@ input.form-control {
     border-radius: 50%;
     background-color:transparent;
 }
-.top-menu
-{
-    background-color: black;
+
+/*Set Plan*/
+.top-menu {
+    background: linear-gradient(180deg, #0C0D0E 27.6%, #060606 100%);
     height: 50px;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
 }
     .top-menu a {
         color: #C1C1C1;
