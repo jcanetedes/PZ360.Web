@@ -41,19 +41,27 @@
         margin: 0 10px;
         max-width: 500px;
     }
+    .form {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
 
-    textarea:focus, 
-    textarea.form-control:focus, 
-    input.form-control:focus, 
-    input[type=text]:focus, 
-    input[type=password]:focus, 
-    input[type=email]:focus, 
-    input[type=number]:focus, 
-    [type=text].form-control:focus, 
-    [type=password].form-control:focus, 
-    [type=email].form-control:focus, 
-    [type=tel].form-control:focus, 
-    [contenteditable].form-control:focus {
+    .form form {
+        width: 500px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        color: #C1C1C1;
+    }
+
+    .form form span {
+        font-size: 28px;
+        color: #F6F6F6;
+    }
+ 
+    input.form-control:focus {
       box-shadow: none;
       background-color: transparent;
       color: #C1C1C1;
@@ -61,13 +69,10 @@
       border-bottom: 2px solid #00AABC;
     }
 
-    input.form-control,
-    input[type=text],
-    input[type=password],
-    input[type=email],
-    input[type=number] {
+    input.form-control {
       color: #C1C1C1;
     }
+
 </style>
 
 <div class="box">
@@ -76,8 +81,9 @@
             <img class="img-fluid" src="~/images/Header.png" />
             <img class="img-fluid" src="~/images/Doggy.png" />
         </div>
-        <div class="col-md-6 col-sm-12">
-            <form>
+        <div class="col-md-6 col-sm-12 form">
+            <form class="text-center">
+                <span>Sign In</span>
                 <div class="form-floating mb-3">
                     <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                     <label for="floatingInput">Email address</label>
