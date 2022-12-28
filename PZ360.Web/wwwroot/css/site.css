@@ -228,6 +228,10 @@ input.form-control {
     height: 100%;
     background: linear-gradient(180deg, #060606 0%, rgba(6, 6, 6, 0) 30.73%), radial-gradient(50% 50% at 50% 50%, #060606 80.73%, rgba(6, 6, 6, 0) 100%);
 }
+.set-plan-bg {
+    background-image: url("../images/setplan_bg.png");
+    background-color: #060606;
+}
 .back-button {
     color: #C1C1C1;
     width: 80px;
@@ -249,8 +253,8 @@ input.form-control {
 }
 .help-question {
     align-items: center;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border: 0px;
     border-radius: 50%;
     background-color: transparent;
