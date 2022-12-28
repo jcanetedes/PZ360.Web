@@ -63,6 +63,12 @@ a, .btn-link {
         content: "An error has occurred."
     }
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
 .left-side, .right-side {
     height: 100vh;
     width: 100%;
@@ -88,6 +94,9 @@ a, .btn-link {
     .left-side, .right-side {
         height: 100vh;
     }
+    .reg-content{
+        width:100%;
+    }
 }
 
 .sign-in-content {
@@ -103,6 +112,16 @@ a, .btn-link {
     color: #C1C1C1;
     text-decoration: none;
 }
+    .form-floating h1 {
+        color: #C1C1C1;
+        margin-top: 1.8em;
+        padding-bottom:10px;
+        font-size: 28px;
+    }
+    .form-floating h4 {
+        color: #C1C1C1;
+        padding-bottom: 15px;
+    }
 
 .form-control {
     background-color: transparent;
@@ -186,4 +205,53 @@ input.form-control {
     border: 0px;
     border-radius: 50%;
     background-color:transparent;
+}
+.top-menu
+{
+    background-color: black;
+    height: 50px;
+    align-items: center;
+    justify-content:center;
+}
+    .top-menu a {
+        color: #C1C1C1;
+        text-decoration: none;
+        font-size: 12px;
+    }
+        .top-menu a img {
+            margin-right: 5px;
+            width: 15px;
+            height: 15px;
+        }
+.reg-content {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #060606 0%, rgba(6, 6, 6, 0) 30.73%), radial-gradient(50% 50% at 50% 50%, #060606 80.73%, rgba(6, 6, 6, 0) 100%);
+}
+.back-button {
+    color: #C1C1C1;
+    width: 80px;
+    height: 40px;
+    background: linear-gradient(90deg, #363535 0%, #141414 100%);
+    border-radius: 27px;
+}
+.plan-bright {
+    background: radial-gradient(84.2% 2813.32% at 100% 100.13%, rgba(0, 58, 76, 0.3) 0%, rgba(5, 89, 110, 0.3) 100%);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.plan-dark {
+    background-color: #0C0D0E;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.help-question {
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 0px;
+    border-radius: 50%;
+    background-color: transparent;
 }
