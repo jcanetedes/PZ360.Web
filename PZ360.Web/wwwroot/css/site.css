@@ -69,7 +69,7 @@ body {
     margin: 0;
 }
 
-/*Login Page*/
+/*Generic CSS*/
 .left-side, .right-side {
     height: 100vh;
     width: 100%;
@@ -77,11 +77,16 @@ body {
 
 .left-side {
     background-color: transparent;
-    padding: 30px;
 }
 
 .right-side {
     background: rgba(0, 0, 0, 0.75);
+}
+ul 
+{
+    text-align: left;
+    margin-left: 2.0em;
+    color: gray;
 }
 
 .no-gutters {
@@ -90,21 +95,17 @@ body {
     padding-right: 0;
     padding-left: 0;
 }
-
-@media screen and (min-width:768px) {
-    .left-side, .right-side {
-        height: 100vh;
-    }
-    .reg-content{
-        width:100%;
-    }
+.rounded-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    width: 50px;
+    height: 50px;
+    border: 0px;
+    border-radius: 50%;
+    background-color: transparent;
 }
-
-.sign-in-content {
-    background: linear-gradient(180deg, #0C0D0E 15.1%, rgba(6, 6, 6, 0) 100%);
-    background-image: url("../Images/login-bg2.jpg");
-}
-
 .form-floating {
     color: #C1C1C1;
     margin: 4px;
@@ -166,10 +167,15 @@ input.form-control {
     border-radius: 0px;
     border-bottom: 2px solid #00AABC;
 }
+
+/*Login Page*/
 .signin-header {
     color: #C1C1C1;
 }
-
+.sign-in-content {
+    background: linear-gradient(180deg, #0C0D0E 15.1%, rgba(6, 6, 6, 0) 100%);
+    background-image: url("../Images/login-bg2.jpg");
+}
 .sign-in-button {
     display: flex;
     flex-direction: row;
@@ -196,19 +202,9 @@ input.form-control {
 .branding{
    padding: 50px;
 }
-.rounded-button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
-    width: 50px;
-    height: 50px;
-    border: 0px;
-    border-radius: 50%;
-    background-color:transparent;
-}
 
-/*Set Plan*/
+
+/*Page Menu*/
 .top-menu {
     background: linear-gradient(180deg, #0C0D0E 27.6%, #060606 100%);
     height: 50px;
@@ -219,12 +215,28 @@ input.form-control {
         color: #C1C1C1;
         text-decoration: none;
         font-size: 12px;
+        padding-top: 10px;
     }
         .top-menu a img {
             margin-right: 5px;
+            margin-left:5px;
             width: 15px;
             height: 15px;
         }
+
+    .top-menu .menu-mini span{
+        color:#C1C1C1;
+        margin-top: .25em;
+        font-size: 12px;
+    }
+    .top-menu .menu-desk{
+        display:none;
+    }
+    .top-menu .menu-mini{
+        display:none;
+    }
+
+/*Set Plan*/
 .reg-content {
     width: 100%;
     height: 100%;
@@ -234,9 +246,10 @@ input.form-control {
     background-image: url("../images/setplan_bg.png");
     background-color: #060606;
 }
+
 .back-button {
     color: #C1C1C1;
-    width: 80px;
+    width: 70px;
     height: 40px;
     background: linear-gradient(90deg, #363535 0%, #141414 100%);
     border-radius: 27px;
@@ -246,18 +259,126 @@ input.form-control {
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+    padding-top: 2.5em;
 }
 .plan-dark {
     background-color: #0C0D0E;
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+    padding-top: 2.5em;
 }
-.help-question {
-    align-items: center;
-    width: 30px;
-    height: 30px;
+    .plan-dark h5, .plan-bright h5 {
+        color: #52C4CA;
+        font-size: 12px;
+    }
+    .plan-dark h3, .plan-bright h3 {
+        color: #C1C1C1;
+    }
+    .plan-dark h4, .plan-bright h4 {
+        color: #C1C1C1;
+        font-size: 16px;
+    }
+    .plan-dark h1, .plan-bright h1 {
+        color: #C1C1C1;
+        font-size: 90px;
+    }
+    .plan-bright h1 span{
+        vertical-align: top;
+        font-size: 12px;
+    }
+    .plan-bright div, .plan-dark div{
+        text-align:left;
+        margin-left: 1.0em;
+    }
+    .plan-bright div ul, .plan-dark div ul {
+        text-align: left;
+        margin-left: 2.0em;
+        color:gray;
+    }
+        .plan-bright div ul li span, .plan-dark div ul li span{
+            vertical-align:top;
+            font-size:10px;
+        }
+
+.help-question 
+{
+    width: 55px;
+    height:55px;
     border: 0px;
     border-radius: 50%;
     background-color: transparent;
+}
+.help-question img{
+    width:55px;
+    height:55px;
+}
+
+.plan-button {
+    align-items: center;
+    color: #C1C1C1;
+    width: 154px;
+    height: 40px;
+    background: linear-gradient(90deg, #01B4D9 0%, #1770B7 100%);
+    border-radius: 27px;
+    border:0;
+    margin-bottom: .45em;
+}
+
+/*Mobile Responsive*/
+@media screen and (min-width:768px) {
+    .left-side, .right-side {
+        height: 100vh;
+    }
+
+    .reg-content {
+        width: 100%;
+    }
+
+    .help-question {
+        align-items: center;
+    }
+
+    .back-button {
+        align-items: center;
+    }
+
+    .top-menu .menu-desk {
+        display: none;
+    }
+
+    .top-menu .menu-mini {
+        display: initial;
+    }
+}
+
+@media screen and (min-width:500px) {
+
+    .top-menu .menu-desk {
+        display: none;
+    }
+
+    .top-menu .menu-mini {
+        display: initial;
+    }
+   
+}
+
+@media screen and (min-width: 1024px) {
+    .help-question {
+        margin-right: 2em;
+        float: right;
+    }
+
+    .back-button {
+        float: left;
+        margin-right: 2em;
+    }
+
+    .top-menu .menu-desk {
+        display: initial;
+    }
+    .top-menu .menu-mini {
+        display: none;
+    }
 }
