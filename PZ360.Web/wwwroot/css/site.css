@@ -500,7 +500,10 @@ input.form-control {
     .left-side, .right-side {
         height: 100vh;
     }
-    .set-plan-bg{
+    .sign-in-content{
+        height:100%;
+    }
+    .set-plan-bg {
         height: 100%;
     }
     .reg-content {
@@ -569,6 +572,9 @@ input.form-control {
     .left-side, .right-side {
         height: 100%;
     }
+    .sign-in-content {
+        height: 100%;
+    }
     .set-plan-bg {
         height: 100%;
     }
@@ -608,7 +614,9 @@ input.form-control {
     .left-side, .right-side {
         height: 100%;
     }
-
+    .sign-in-content {
+        height: 100%;
+    }
     .set-plan-bg {
         height: 100%;
     }
@@ -648,9 +656,11 @@ input.form-control {
     .left-side, .right-side {
         height: 100%;
     }
-
+    .sign-in-content {
+        height: 100%;
+    }
     .set-plan-bg {
-        height: 100vh;
+        height: 100%;
     }
 
     .help-question {
@@ -688,9 +698,11 @@ input.form-control {
     .left-side, .right-side {
         height: 100%;
     }
-
+    .sign-in-content {
+        height: 100%;
+    }
     .set-plan-bg {
-        height: 100vh;
+        height: 100%;
     }
 
     .help-question {
@@ -728,9 +740,11 @@ input.form-control {
     .left-side, .right-side {
         height: 100%;
     }
-
+    .sign-in-content {
+        height: 100%;
+    }
     .set-plan-bg {
-        height: 100vh;
+        height: 100%;
     }
 
     .help-question {
@@ -768,9 +782,11 @@ input.form-control {
     .left-side, .right-side {
         height: 100%;
     }
-
+    .sign-in-content {
+        height: 100%;
+    }
     .set-plan-bg {
-        height: 100vh;
+        height: 100%;
     }
 
     .help-question {
@@ -808,9 +824,11 @@ input.form-control {
     .left-side, .right-side {
         height: 100%;
     }
-
+    .sign-in-content {
+        height: 100%;
+    }
     .set-plan-bg {
-        height: 100vh;
+        height: 100%;
     }
 
     .help-question {
@@ -848,9 +866,11 @@ input.form-control {
     .left-side, .right-side {
         height: 100%;
     }
-
+    .sign-in-content {
+        height: 100%;
+    }
     .set-plan-bg {
-        height: 100vh;
+        height: 100%;
     }
 
     .help-question {
@@ -888,7 +908,9 @@ input.form-control {
     .left-side, .right-side {
         height: 100%;
     }
-
+     .sign-in-content{
+        height:100%;
+    }
     .set-plan-bg {
         height: 100vh;
     }
