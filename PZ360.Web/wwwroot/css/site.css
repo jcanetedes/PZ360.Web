@@ -71,7 +71,7 @@ body {
 
 /*Generic CSS*/
 .left-side, .right-side {
-    height: 100vh;
+    height: auto;
     width: 100%;
 }
 
@@ -207,7 +207,7 @@ input.form-control {
 /*Page Menu*/
 .top-menu {
     background: linear-gradient(180deg, #0C0D0E 27.6%, #060606 100%);
-    height: 50px;
+    height: 60px;
     align-items: center;
     justify-content: center;
 }
@@ -328,7 +328,7 @@ input.form-control {
 /*Mobile Responsive*/
 @media screen and (min-width:768px) {
     .left-side, .right-side {
-        height: 100vh;
+      height:100vh;
     }
 
     .reg-content {
@@ -350,9 +350,13 @@ input.form-control {
     .top-menu .menu-mini {
         display: initial;
     }
+        
+    .plan-dark, .plan-bright {
+        height: 100%;
+    }
 }
 
-@media screen and (min-width:500px) {
+@media screen and (min-width:300px) {
 
     .top-menu .menu-desk {
         display: none;
@@ -361,7 +365,9 @@ input.form-control {
     .top-menu .menu-mini {
         display: initial;
     }
-   
+    .plan-dark, .plan-bright {
+        height: 100%;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -380,5 +386,8 @@ input.form-control {
     }
     .top-menu .menu-mini {
         display: none;
+    }
+    .plan-dark, .plan-bright {
+        height: 100vh;
     }
 }
