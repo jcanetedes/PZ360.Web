@@ -82,8 +82,8 @@ body {
 .right-side {
     background: rgba(0, 0, 0, 0.75);
 }
-ul 
-{
+
+ul {
     text-align: left;
     margin-left: 2.0em;
     color: gray;
@@ -95,6 +95,7 @@ ul
     padding-right: 0;
     padding-left: 0;
 }
+
 .rounded-button {
     display: flex;
     flex-direction: row;
@@ -106,20 +107,24 @@ ul
     border-radius: 50%;
     background-color: transparent;
 }
+
 .form-floating {
     color: #C1C1C1;
     margin: 4px;
 }
-.form-floating a{
-    color: #C1C1C1;
-    text-decoration: none;
-}
+
+    .form-floating a {
+        color: #C1C1C1;
+        text-decoration: none;
+    }
+
     .form-floating h1 {
         color: #C1C1C1;
-        margin-top: 1.8em;
-        padding-bottom:10px;
+        margin-top: 1.0em;
+        padding-bottom: 10px;
         font-size: 28px;
     }
+
     .form-floating h4 {
         color: #C1C1C1;
         padding-bottom: 15px;
@@ -151,9 +156,10 @@ ul
             font-size: 28px;
             color: #C1C1C1;
         }
-.form-check{
-    width:30px !important;
-    height:30px !important;
+
+.form-check {
+    width: 30px !important;
+    height: 30px !important;
 }
 
 input.form-control:focus {
@@ -176,10 +182,12 @@ input.form-control {
 .signin-header {
     color: #C1C1C1;
 }
+
 .sign-in-content {
     background: linear-gradient(180deg, #0C0D0E 15.1%, rgba(6, 6, 6, 0) 100%);
     background-image: url("../Images/login-bg2.jpg");
 }
+
 .sign-in-button {
     display: flex;
     flex-direction: row;
@@ -191,6 +199,7 @@ input.form-control {
     background: linear-gradient(90deg, #01B4D9 0%, #1770B7 100%);
     border-radius: 27px;
 }
+
 .join-button {
     display: flex;
     flex-direction: row;
@@ -203,8 +212,9 @@ input.form-control {
     background: linear-gradient(90deg, #363535 0%, #141414 100%);
     border-radius: 27px;
 }
-.branding{
-   padding: 50px;
+
+.branding {
+    padding: 50px;
 }
 
 
@@ -215,29 +225,33 @@ input.form-control {
     align-items: center;
     justify-content: center;
 }
+
     .top-menu a {
         color: #C1C1C1;
         text-decoration: none;
         font-size: 12px;
         padding-top: 10px;
     }
+
         .top-menu a img {
             margin-right: 5px;
-            margin-left:5px;
+            margin-left: 5px;
             width: 15px;
             height: 15px;
         }
 
-    .top-menu .menu-mini span{
-        color:#C1C1C1;
+    .top-menu .menu-mini span {
+        color: #C1C1C1;
         margin-top: .25em;
         font-size: 12px;
     }
-    .top-menu .menu-desk{
-        display:none;
+
+    .top-menu .menu-desk {
+        display: none;
     }
-    .top-menu .menu-mini{
-        display:none;
+
+    .top-menu .menu-mini {
+        display: none;
     }
 
 /*Set Plan*/
@@ -246,6 +260,7 @@ input.form-control {
     height: 100%;
     background: linear-gradient(180deg, #060606 0%, rgba(6, 6, 6, 0) 30.73%), radial-gradient(50% 50% at 50% 50%, #060606 80.73%, rgba(6, 6, 6, 0) 100%);
 }
+
 .set-plan-bg {
     background-image: url("../images/setplan_bg.png");
     background-color: #060606;
@@ -258,6 +273,7 @@ input.form-control {
     background: linear-gradient(90deg, #363535 0%, #141414 100%);
     border-radius: 27px;
 }
+
 .plan-bright {
     background: radial-gradient(84.2% 2813.32% at 100% 100.13%, rgba(0, 58, 76, 0.3) 0%, rgba(5, 89, 110, 0.3) 100%);
     border-radius: 10px;
@@ -265,6 +281,7 @@ input.form-control {
     margin-bottom: 10px;
     padding-top: 2.5em;
 }
+
 .plan-dark {
     background-color: #0C0D0E;
     border-radius: 10px;
@@ -272,51 +289,59 @@ input.form-control {
     margin-bottom: 10px;
     padding-top: 2.5em;
 }
+
     .plan-dark h5, .plan-bright h5 {
         color: #52C4CA;
         font-size: 12px;
     }
+
     .plan-dark h3, .plan-bright h3 {
         color: #C1C1C1;
     }
+
     .plan-dark h4, .plan-bright h4 {
         color: #C1C1C1;
         font-size: 16px;
     }
+
     .plan-dark h1, .plan-bright h1 {
         color: #C1C1C1;
         font-size: 90px;
     }
-    .plan-bright h1 span{
-        vertical-align: top;
-        font-size: 12px;
-    }
-    .plan-bright div, .plan-dark div{
-        text-align:left;
-        margin-left: 1.0em;
-    }
-    .plan-bright div ul, .plan-dark div ul {
-        text-align: left;
-        margin-left: 2.0em;
-        color:gray;
-    }
-        .plan-bright div ul li span, .plan-dark div ul li span{
-            vertical-align:top;
-            font-size:10px;
+
+        .plan-bright h1 span {
+            vertical-align: top;
+            font-size: 12px;
         }
 
-.help-question 
-{
+    .plan-bright div, .plan-dark div {
+        text-align: left;
+        margin-left: 1.0em;
+    }
+
+        .plan-bright div ul, .plan-dark div ul {
+            text-align: left;
+            margin-left: 2.0em;
+            color: gray;
+        }
+
+            .plan-bright div ul li span, .plan-dark div ul li span {
+                vertical-align: top;
+                font-size: 10px;
+            }
+
+.help-question {
     width: 55px;
-    height:55px;
+    height: 55px;
     border: 0px;
     border-radius: 50%;
     background-color: transparent;
 }
-.help-question img{
-    width:55px;
-    height:55px;
-}
+
+    .help-question img {
+        width: 55px;
+        height: 55px;
+    }
 
 .plan-button {
     align-items: center;
@@ -325,21 +350,22 @@ input.form-control {
     height: 40px;
     background: linear-gradient(90deg, #01B4D9 0%, #1770B7 100%);
     border-radius: 27px;
-    border:0;
+    border: 0;
     margin-bottom: .45em;
 }
 
 /*Profile*/
-.profile-left, profile-right
-{
-    width:100%;
+.profile-left, profile-right {
+    width: 100%;
 }
+
 .profile-right {
     justify-content: left;
     background: none !important;
     text-align: left;
-    color:#C1C1C1;
+    color: #C1C1C1;
 }
+
     .profile-right div div span {
         margin-bottom: 5px;
     }
@@ -349,11 +375,12 @@ input.form-control {
             height: 20px;
             margin-right: 10px;
         }
-.profile-left div div img
-{
+
+.profile-left div div img {
     width: 100%;
     max-width: 400px;
 }
+
 .next-profile-button {
     color: #C1C1C1;
     width: 70px;
@@ -361,6 +388,7 @@ input.form-control {
     background: linear-gradient(90deg, #01B4D9 0%, #1770B7 100%);
     border-radius: 27px;
 }
+
 .help-profile-question {
     width: 55px;
     height: 55px;
@@ -373,60 +401,68 @@ input.form-control {
         width: 55px;
         height: 55px;
     }
-.profile-avatar-action{
-    align-content:center;
-    justify-content:center;
+
+.profile-avatar-action {
+    align-content: center;
+    justify-content: center;
     margin-top: 1.0em;
-    align-items:center;
+    align-items: center;
 }
+
 .profile-acct-connected {
     justify-content: left;
-    text-align:left;
+    text-align: left;
     margin-right: 2em;
     margin-left: 2em;
-    color:#C1C1C1;
+    color: #C1C1C1;
 }
-    .profile-acct-connected div div span{
+
+    .profile-acct-connected div div span {
         margin-bottom: 5px;
     }
+
         .profile-acct-connected div div span img {
             width: 20px;
             height: 20px;
             margin-right: 10px;
         }
-.profile-acct-third-party
-{
-    justify-content:left;
-    text-align:left;
+
+.profile-acct-third-party {
+    justify-content: left;
+    text-align: left;
 }
-.profile-acct-third-party img{
-    width: 60px;
-    height: 50px;
-}
-.profile-form-control
-{
-    color:#C1C1C1;
+
+    .profile-acct-third-party img {
+        width: 60px;
+        height: 50px;
+    }
+
+.profile-form-control {
+    color: #C1C1C1;
     font-size: 14px;
-    text-align:left;
+    text-align: left;
 }
+
     .profile-form-control input {
         text-decoration: none;
         color: #C1C1C1;
         margin: 5px;
-        font-size:14px;
+        font-size: 14px;
         background-color: #252729;
         border-radius: 5px;
         width: 100%;
-        height:30px;
+        height: 30px;
         border: 1px solid #5A5A5A;
         border-radius: 8px;
     }
+
     .profile-form-control label {
         font-size: 14px;
-        justify-content:left;
-        margin:5px;
-        width:200px;
+        justify-content: left;
+        margin: 5px;
+        width: 200px;
     }
+
 .next-profile-bottom {
     color: #C1C1C1;
     width: 70px;
@@ -434,18 +470,41 @@ input.form-control {
     background: linear-gradient(90deg, #01B4D9 0%, #1770B7 100%);
     border-radius: 27px;
 }
+
+/*Viola Page*/
+.back-to-login {
+    color: #C1C1C1;
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    background: linear-gradient(90deg, #01B4D9 0%, #1770B7 100%);
+    border-radius: 27px;
+}
+
+.viola-content {
+    color: #C1C1C1;
+}
+
+    .viola-content div div img {
+        width: 100%;
+        max-width: 400px;
+    }
 /*Mobile Responsive*/
 @media screen and (min-width:768px) {
     .left-side, .right-side {
-      height:100vh;
+        height: 100vh;
     }
-
+    .set-plan-bg{
+        height: 100%;
+    }
     .reg-content {
         width: 100%;
     }
-    .next-profile-bottom{
-        align-items:center;
+
+    .next-profile-bottom {
+        align-items: center;
     }
+
     .help-question {
         align-items: center;
     }
@@ -465,10 +524,11 @@ input.form-control {
     .top-menu .menu-mini {
         display: initial;
     }
-        
+
     .plan-dark, .plan-bright {
         height: 100%;
     }
+
     .profile-acct-third-party {
         justify-content: center;
         text-align: center;
@@ -480,55 +540,71 @@ input.form-control {
     .top-menu .menu-desk {
         display: none;
     }
+
     .next-profile-bottom {
         align-items: center;
     }
+
     .profile-acct-third-party {
         justify-content: center;
         text-align: center;
     }
+
     .top-menu .menu-mini {
         display: initial;
     }
+
     .plan-dark, .plan-bright {
         height: 100%;
     }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
     .left-side, .right-side {
+        height: 100%;
+    }
+    .set-plan-bg {
         height: 100%;
     }
     .help-question {
         margin-right: 2em;
         float: right;
     }
+
     .next-profile-bottom {
-        float:right;
+        float: right;
     }
+
     .back-button {
         float: left;
         margin-right: 2em;
     }
+
     .profile-acct-third-party {
         justify-content: left;
         text-align: left;
     }
+
     .top-menu .menu-desk {
         display: initial;
     }
+
     .top-menu .menu-mini {
         display: none;
     }
+
     .plan-dark, .plan-bright {
         height: 100vh;
     }
 }
+
 @media screen and (min-width: 900px) {
     .left-side, .right-side {
         height: 100%;
     }
-
+    .set-plan-bg {
+        height: 100%;
+    }
     .help-question {
         margin-right: 2em;
         float: right;
