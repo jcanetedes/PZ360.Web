@@ -151,6 +151,10 @@ ul
             font-size: 28px;
             color: #C1C1C1;
         }
+.form-check{
+    width:30px !important;
+    height:30px !important;
+}
 
 input.form-control:focus {
     box-shadow: none;
@@ -325,6 +329,111 @@ input.form-control {
     margin-bottom: .45em;
 }
 
+/*Profile*/
+.profile-left, profile-right
+{
+    width:100%;
+}
+.profile-right {
+    justify-content: left;
+    background: none !important;
+    text-align: left;
+    color:#C1C1C1;
+}
+    .profile-right div div span {
+        margin-bottom: 5px;
+    }
+
+        .profile-right div div span img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+.profile-left div div img
+{
+    width: 100%;
+    max-width: 400px;
+}
+.next-profile-button {
+    color: #C1C1C1;
+    width: 70px;
+    height: 40px;
+    background: linear-gradient(90deg, #01B4D9 0%, #1770B7 100%);
+    border-radius: 27px;
+}
+.help-profile-question {
+    width: 55px;
+    height: 55px;
+    border: 0px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+    .help-profile-question img {
+        width: 55px;
+        height: 55px;
+    }
+.profile-avatar-action{
+    align-content:center;
+    justify-content:center;
+    margin-top: 1.0em;
+    align-items:center;
+}
+.profile-acct-connected {
+    justify-content: left;
+    text-align:left;
+    margin-right: 2em;
+    margin-left: 2em;
+    color:#C1C1C1;
+}
+    .profile-acct-connected div div span{
+        margin-bottom: 5px;
+    }
+        .profile-acct-connected div div span img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+.profile-acct-third-party
+{
+    justify-content:left;
+    text-align:left;
+}
+.profile-acct-third-party img{
+    width: 60px;
+    height: 50px;
+}
+.profile-form-control
+{
+    color:#C1C1C1;
+    font-size: 14px;
+    text-align:left;
+}
+    .profile-form-control input {
+        text-decoration: none;
+        color: #C1C1C1;
+        margin: 5px;
+        font-size:14px;
+        background-color: #252729;
+        border-radius: 5px;
+        width: 100%;
+        height:30px;
+        border: 1px solid #5A5A5A;
+        border-radius: 8px;
+    }
+    .profile-form-control label {
+        font-size: 14px;
+        justify-content:left;
+        margin:5px;
+        width:200px;
+    }
+.next-profile-bottom {
+    color: #C1C1C1;
+    width: 70px;
+    height: 40px;
+    background: linear-gradient(90deg, #01B4D9 0%, #1770B7 100%);
+    border-radius: 27px;
+}
 /*Mobile Responsive*/
 @media screen and (min-width:768px) {
     .left-side, .right-side {
@@ -334,8 +443,14 @@ input.form-control {
     .reg-content {
         width: 100%;
     }
-
+    .next-profile-bottom{
+        align-items:center;
+    }
     .help-question {
+        align-items: center;
+    }
+
+    .help-profile-question {
         align-items: center;
     }
 
@@ -354,6 +469,10 @@ input.form-control {
     .plan-dark, .plan-bright {
         height: 100%;
     }
+    .profile-acct-third-party {
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 @media screen and (min-width:300px) {
@@ -361,7 +480,13 @@ input.form-control {
     .top-menu .menu-desk {
         display: none;
     }
-
+    .next-profile-bottom {
+        align-items: center;
+    }
+    .profile-acct-third-party {
+        justify-content: center;
+        text-align: center;
+    }
     .top-menu .menu-mini {
         display: initial;
     }
@@ -370,9 +495,46 @@ input.form-control {
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px){
+    .left-side, .right-side {
+        height: 100%;
+    }
     .help-question {
         margin-right: 2em;
+        float: right;
+    }
+    .next-profile-bottom {
+        float:right;
+    }
+    .back-button {
+        float: left;
+        margin-right: 2em;
+    }
+    .profile-acct-third-party {
+        justify-content: left;
+        text-align: left;
+    }
+    .top-menu .menu-desk {
+        display: initial;
+    }
+    .top-menu .menu-mini {
+        display: none;
+    }
+    .plan-dark, .plan-bright {
+        height: 100vh;
+    }
+}
+@media screen and (min-width: 900px) {
+    .left-side, .right-side {
+        height: 100%;
+    }
+
+    .help-question {
+        margin-right: 2em;
+        float: right;
+    }
+
+    .next-profile-bottom {
         float: right;
     }
 
@@ -381,12 +543,19 @@ input.form-control {
         margin-right: 2em;
     }
 
+    .profile-acct-third-party {
+        justify-content: left;
+        text-align: left;
+    }
+
     .top-menu .menu-desk {
         display: initial;
     }
+
     .top-menu .menu-mini {
         display: none;
     }
+
     .plan-dark, .plan-bright {
         height: 100vh;
     }
