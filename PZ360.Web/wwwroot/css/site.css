@@ -494,6 +494,7 @@ input.form-control {
         width: 100%;
         max-width: 400px;
     }
+
 /*Mobile Responsive*/
 @media screen and (min-width:768px) {
     .left-side, .right-side {
@@ -607,9 +608,291 @@ input.form-control {
     .left-side, .right-side {
         height: 100%;
     }
+
     .set-plan-bg {
         height: 100%;
     }
+    .help-question {
+        margin-right: 2em;
+        float: right;
+    }
+
+    .next-profile-bottom {
+        float: right;
+    }
+
+    .back-button {
+        float: left;
+        margin-right: 2em;
+    }
+
+    .profile-acct-third-party {
+        justify-content: left;
+        text-align: left;
+    }
+
+    .top-menu .menu-desk {
+        display: initial;
+    }
+
+    .top-menu .menu-mini {
+        display: none;
+    }
+
+    .plan-dark, .plan-bright {
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width: 1156px) {
+    .left-side, .right-side {
+        height: 100%;
+    }
+
+    .set-plan-bg {
+        height: 100vh;
+    }
+
+    .help-question {
+        margin-right: 2em;
+        float: right;
+    }
+
+    .next-profile-bottom {
+        float: right;
+    }
+
+    .back-button {
+        float: left;
+        margin-right: 2em;
+    }
+
+    .profile-acct-third-party {
+        justify-content: left;
+        text-align: left;
+    }
+
+    .top-menu .menu-desk {
+        display: initial;
+    }
+
+    .top-menu .menu-mini {
+        display: none;
+    }
+
+    .plan-dark, .plan-bright {
+        height: 100vh;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .left-side, .right-side {
+        height: 100%;
+    }
+
+    .set-plan-bg {
+        height: 100vh;
+    }
+
+    .help-question {
+        margin-right: 2em;
+        float: right;
+    }
+
+    .next-profile-bottom {
+        float: right;
+    }
+
+    .back-button {
+        float: left;
+        margin-right: 2em;
+    }
+
+    .profile-acct-third-party {
+        justify-content: left;
+        text-align: left;
+    }
+
+    .top-menu .menu-desk {
+        display: initial;
+    }
+
+    .top-menu .menu-mini {
+        display: none;
+    }
+
+    .plan-dark, .plan-bright {
+        height: 100vh;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .left-side, .right-side {
+        height: 100%;
+    }
+
+    .set-plan-bg {
+        height: 100vh;
+    }
+
+    .help-question {
+        margin-right: 2em;
+        float: right;
+    }
+
+    .next-profile-bottom {
+        float: right;
+    }
+
+    .back-button {
+        float: left;
+        margin-right: 2em;
+    }
+
+    .profile-acct-third-party {
+        justify-content: left;
+        text-align: left;
+    }
+
+    .top-menu .menu-desk {
+        display: initial;
+    }
+
+    .top-menu .menu-mini {
+        display: none;
+    }
+
+    .plan-dark, .plan-bright {
+        height: 100vh;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .left-side, .right-side {
+        height: 100%;
+    }
+
+    .set-plan-bg {
+        height: 100vh;
+    }
+
+    .help-question {
+        margin-right: 2em;
+        float: right;
+    }
+
+    .next-profile-bottom {
+        float: right;
+    }
+
+    .back-button {
+        float: left;
+        margin-right: 2em;
+    }
+
+    .profile-acct-third-party {
+        justify-content: left;
+        text-align: left;
+    }
+
+    .top-menu .menu-desk {
+        display: initial;
+    }
+
+    .top-menu .menu-mini {
+        display: none;
+    }
+
+    .plan-dark, .plan-bright {
+        height: 100vh;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .left-side, .right-side {
+        height: 100%;
+    }
+
+    .set-plan-bg {
+        height: 100vh;
+    }
+
+    .help-question {
+        margin-right: 2em;
+        float: right;
+    }
+
+    .next-profile-bottom {
+        float: right;
+    }
+
+    .back-button {
+        float: left;
+        margin-right: 2em;
+    }
+
+    .profile-acct-third-party {
+        justify-content: left;
+        text-align: left;
+    }
+
+    .top-menu .menu-desk {
+        display: initial;
+    }
+
+    .top-menu .menu-mini {
+        display: none;
+    }
+
+    .plan-dark, .plan-bright {
+        height: 100vh;
+    }
+}
+@media screen and (min-width: 1680px) {
+    .left-side, .right-side {
+        height: 100%;
+    }
+
+    .set-plan-bg {
+        height: 100vh;
+    }
+
+    .help-question {
+        margin-right: 2em;
+        float: right;
+    }
+
+    .next-profile-bottom {
+        float: right;
+    }
+
+    .back-button {
+        float: left;
+        margin-right: 2em;
+    }
+
+    .profile-acct-third-party {
+        justify-content: left;
+        text-align: left;
+    }
+
+    .top-menu .menu-desk {
+        display: initial;
+    }
+
+    .top-menu .menu-mini {
+        display: none;
+    }
+
+    .plan-dark, .plan-bright {
+        height: 100vh;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .left-side, .right-side {
+        height: 100%;
+    }
+
+    .set-plan-bg {
+        height: 100vh;
+    }
+
     .help-question {
         margin-right: 2em;
         float: right;
