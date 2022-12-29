@@ -130,6 +130,11 @@ ul {
         padding-bottom: 15px;
     }
 
+    .form-floating .title {
+        font-weight: 700;
+        font-size: 64px;
+    }
+
 .form-control {
     background-color: transparent;
     border: 0px solid;
@@ -635,4 +640,14 @@ input.form-control {
     .plan-dark, .plan-bright {
         height: 100vh;
     }
+}
+
+.users-can-do {
+    color: #F6F6F6;
+    font-weight: 500;
+}
+
+.fixed-size {
+    max-width: 100px;
+    min-width: 90px;
 }
