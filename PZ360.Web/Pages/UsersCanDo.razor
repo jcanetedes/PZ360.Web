@@ -1,5 +1,6 @@
 ﻿@page "/users-can-do"
 
+@inject NavigationManager _navigationManager
 
 <div class="row no-gutters top-menu align-items-center text-center">
     <div class="col-4 menu-desk">
@@ -20,8 +21,8 @@
     <div class="col-md reg-content align-items-center text-center users-can-do">
         <div class="row m-2 p-2">
             <div class="col-md">
-                <button class="back-button">Back</button>
-                <button class="next-profile-button float-end">Next</button>
+                <button class="back-button" @onclick="OnGoBack">Back</button>
+                <button class="next-profile-button float-end" @onclick="OnGoNext">Next</button>
             </div>
         </div>
         <div class="row">
@@ -77,12 +78,21 @@
         </div>
         <div class="row m-2 p-2">
             <div class="col-md">
-                <button class="next-profile-button float-end">Next</button>
+                <button class="next-profile-button float-end" @onclick="OnGoNext">Next</button>
             </div>
         </div>
     </div>
 </div>
 @code
 {
+    
+    public void OnGoNext()
+    {
+        _navigationManager.NavigateTo($"/setplan", true);
+    }
 
+    public void OnGoBack()
+    {
+        _navigationManager.NavigateTo($"/login", true);
+    }
 }

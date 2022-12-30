@@ -1,5 +1,6 @@
 ﻿@page "/profile"
 
+@inject NavigationManager _navigationManager
 
 <div class="row no-gutters top-menu align-items-center text-center">
     <div class="col-4 menu-desk">
@@ -207,12 +208,21 @@
         </div>
         <div class="row m-2 p-2">
             <div class="col-md">
-                <button class="next-profile-bottom">Next</button>
+                <button class="next-profile-bottom" @onclick="OnGoNext">Next</button>
             </div>
         </div>
     </div>
 </div>
 @code
 {
+    
+    public void OnGoNext()
+    {
+        _navigationManager.NavigateTo($"/viola", true);
+    }
 
+    public void OnGoBack()
+    {
+        _navigationManager.NavigateTo($"/setplan", true);
+    }
 }
