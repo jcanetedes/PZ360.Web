@@ -495,13 +495,104 @@ input.form-control {
         max-width: 400px;
     }
 
+/*Checkout*/
+.check-out-content {
+    color: #C1C1C1;
+}
+.check-out-content div div p
+{
+    font-size:14px;
+}
+    .check-out-content div div h5{
+        font-size: 16px;
+    }
+    .check-out-content div div h6 {
+        font-size: 14px;
+    }
+.back-checkout-button {
+    color: #C1C1C1;
+    width: 70px;
+    height: 40px;
+    background: linear-gradient(90deg, #363535 0%, #141414 100%);
+    border-radius: 27px;
+}
+
+.help-checkout-question {
+    width: 55px;
+    height: 55px;
+    border: 0px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+    .help-checkout-question img {
+        width: 55px;
+        height: 55px;
+    }
+.check-out-right
+{
+    justify-content:right;
+    margin:0;
+    padding:0;
+    height:100%;
+}
+.check-out-left 
+{
+    text-align:left;
+    background:none;
+    padding-top:10px;
+    height: 100%;
+}
+.check-out-right img {
+    height: 400px;
+    width: 100%;
+    max-width: 600px !important;
+}
+.check-out-right div ul, .check-out-left div ul {
+    text-align: left;
+    margin-left: 1.5em;
+    color: gray;
+    font-size:14px;
+}
+
+    .check-out-right div ul li span, .check-out-left div ul li span {
+        vertical-align: top;
+        font-size: 10px;
+    }
+.check-out-price-info
+{
+    display:none !important;
+    color: #C1C1C1;
+}
+.check-out-price-info-bottom 
+{
+    align-items:center;
+    color: #C1C1C1;
+}
+.proceed-checkout-button {
+    color: #C1C1C1;
+    font-size: 14px;
+    margin-left: 5px;
+    width: 150px;
+    height: 40px;
+    background: linear-gradient(90deg, #01B4D9 0%, #1770B7 100%);
+    border-radius: 27px;
+}
 /*Mobile Responsive*/
 @media screen and (min-width:768px) {
     .left-side, .right-side {
         height: 100vh;
     }
+    .check-out-price-info, .check-out-price-info-bottom 
+    {
+        display:initial !important;
+        float: right;
+    }
     .sign-in-content{
         height:100%;
+    }
+    .check-out-right img {
+        height: 400px;
     }
     .set-plan-bg {
         height: 100%;
@@ -509,7 +600,15 @@ input.form-control {
     .reg-content {
         width: 100%;
     }
+    .back-checkout-button {
+        float: none;
+        align-items: center;
+    }
 
+    .help-checkout-question {
+        float: none;
+        align-items: center;
+    }
     .next-profile-bottom {
         align-items: center;
     }
@@ -544,13 +643,30 @@ input.form-control {
     }
 }
 
+
+
 @media screen and (min-width:300px) {
 
     .top-menu .menu-desk {
         display: none;
     }
-
+    .check-out-price-info-bottom 
+    {
+        align-items:center;
+    }
+    .check-out-right img {
+        height: 300px;
+    }
     .next-profile-bottom {
+        align-items: center;
+    }
+    .back-checkout-button {
+        float:none;
+        align-items:center;
+    }
+
+    .help-checkout-question {
+        float: none;
         align-items: center;
     }
 
@@ -572,8 +688,15 @@ input.form-control {
     .left-side, .right-side {
         height: 100%;
     }
+    .check-out-price-info, .check-out-price-info-bottom {
+        display:initial !important;
+        float: right;
+    }
     .sign-in-content {
         height: 100%;
+    }
+    .check-out-right img {
+        height: 400px;
     }
     .set-plan-bg {
         height: 100%;
@@ -581,6 +704,12 @@ input.form-control {
     .help-question {
         margin-right: 2em;
         float: right;
+    }
+    .back-checkout-button {
+        float: left;
+    }
+    .help-checkout-question {
+        float: left;
     }
 
     .next-profile-bottom {
@@ -614,6 +743,10 @@ input.form-control {
     .left-side, .right-side {
         height: 100%;
     }
+    .check-out-price-info, .check-out-price-info-bottom {
+        display: initial !important;
+        float: right;
+    }
     .sign-in-content {
         height: 100%;
     }
@@ -624,7 +757,13 @@ input.form-control {
         margin-right: 2em;
         float: right;
     }
+    .back-checkout-button {
+        float: left;
+    }
 
+    .help-checkout-question {
+        float: left;
+    }
     .next-profile-bottom {
         float: right;
     }
@@ -656,13 +795,23 @@ input.form-control {
     .left-side, .right-side {
         height: 100%;
     }
+    .check-out-price-info, .check-out-price-info-bottom {
+        display: initial !important;
+        float: right;
+    }
     .sign-in-content {
         height: 100%;
     }
     .set-plan-bg {
         height: 100%;
     }
+    .back-checkout-button {
+        float: left;
+    }
 
+    .help-checkout-question {
+        float: left;
+    }
     .help-question {
         margin-right: 2em;
         float: right;
@@ -698,13 +847,23 @@ input.form-control {
     .left-side, .right-side {
         height: 100%;
     }
+    .check-out-price-info, .check-out-price-info-bottom {
+        display: initial !important;
+        float: right;
+    }
     .sign-in-content {
         height: 100%;
     }
     .set-plan-bg {
         height: 100%;
     }
+    .back-checkout-button {
+        float: left;
+    }
 
+    .help-checkout-question {
+        float: left;
+    }
     .help-question {
         margin-right: 2em;
         float: right;
@@ -740,13 +899,23 @@ input.form-control {
     .left-side, .right-side {
         height: 100%;
     }
+    .check-out-price-info, .check-out-price-info-bottom {
+        display: initial !important;
+        float: right;
+    }
     .sign-in-content {
         height: 100%;
     }
     .set-plan-bg {
         height: 100%;
     }
+    .back-checkout-button {
+        float: left;
+    }
 
+    .help-checkout-question {
+        float: left;
+    }
     .help-question {
         margin-right: 2em;
         float: right;
@@ -788,7 +957,17 @@ input.form-control {
     .set-plan-bg {
         height: 100%;
     }
+    .back-checkout-button {
+        float: left;
+    }
+    .check-out-price-info, .check-out-price-info-bottom {
+        display: initial !important;
+        float: right;
+    }
 
+    .help-checkout-question {
+        float: left;
+    }
     .help-question {
         margin-right: 2em;
         float: right;
@@ -824,13 +1003,24 @@ input.form-control {
     .left-side, .right-side {
         height: 100%;
     }
+    .check-out-price-info, .check-out-price-info-bottom {
+        display: initial !important;
+        float: right;
+    }
     .sign-in-content {
         height: 100%;
     }
     .set-plan-bg {
         height: 100%;
     }
+    .back-checkout-button {
+        float: left;
+    }
 
+
+    .help-checkout-question {
+        float: left;
+    }
     .help-question {
         margin-right: 2em;
         float: right;
@@ -866,13 +1056,24 @@ input.form-control {
     .left-side, .right-side {
         height: 100%;
     }
+    .check-out-price-info, .check-out-price-info-bottom {
+        display: initial !important;
+        float: right;
+    }
     .sign-in-content {
         height: 100%;
     }
     .set-plan-bg {
         height: 100%;
     }
+    .back-checkout-button {
+        float: left;
+    }
 
+
+    .help-checkout-question {
+        float: left;
+    }
     .help-question {
         margin-right: 2em;
         float: right;
@@ -908,13 +1109,23 @@ input.form-control {
     .left-side, .right-side {
         height: 100%;
     }
+    .check-out-price-info, .check-out-price-info-bottom {
+        display: initial !important;
+        float: right;
+    }
      .sign-in-content{
         height:100%;
     }
     .set-plan-bg {
         height: 100vh;
     }
+    .back-checkout-button {
+        float: left;
+    }
 
+    .help-checkout-question {
+        float: left;
+    }
     .help-question {
         margin-right: 2em;
         float: right;
