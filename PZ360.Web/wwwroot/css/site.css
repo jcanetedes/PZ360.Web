@@ -1167,3 +1167,9 @@ input.form-control {
     max-width: 100px;
     min-width: 90px;
 }
+
+.model-card {
+    background: #141414;
+    border-radius: 15px;
+    padding: 10px;
+}
