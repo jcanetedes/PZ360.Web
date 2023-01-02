@@ -1,0 +1,90 @@
+﻿@page "/vendor/intro"
+
+@inject NavigationManager _navigationManager
+
+<div class="row no-gutters top-menu align-items-center text-center">
+    <div class="col-7 menu-desk">
+        <a href="#"><img src="../images/paw.png" alt="paw.png" />Let's Start <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw.png" alt="paw.png" />Set Your Plan <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw.png" alt="paw.png" />Profile <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw.png" alt="paw.png" />Contact Info <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw.png" alt="paw.png" />Business Info <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw.png" alt="paw.png" />Categories <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw.png" alt="paw.png" />Checkout <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw_gray.png" alt="paw_gray.png" />Viola</a>
+    </div>
+    <div class="col-5 menu-mini">
+        <div class="row">
+            <a href="#"><img src="../images/paw.png" alt="paw.png" />Let's Start <img src="../images/Separator.png" alt="Separator.png" /></a>
+            <span>It Only Takes 3 Steps</span>
+        </div>
+
+    </div>
+</div>
+
+<div class="row no-gutters set-plan-bg">
+    <div class="col-md reg-content align-items-center text-center">
+        <div class="row m-2 p-2">
+            <div class="col-md">
+                <button class="next-profile-bottom" @onclick="OnGoNext">Next</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <div class="form-floating">
+                    <h1>Let's Start Selling</h1>
+                    <h4>Well help you...</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row check-out-content no-gutters align-items-center justify-content-center">
+            <div class="row no-gutters align-items-center justify-content-center">
+                <div class="col-md-4 check-out-left">
+                    <div class="left-side check-out-left">
+                        <div class="row align-items-center">
+                            <img src="../images/success-svgrepo-com-2.png" class="col-md-3 col-sm-12 float-sm-start fixed-size" alt="success-svgrepo-com-2.png" />
+                            <div class="col-md-9 col-sm-12 text-start">
+                                <h5>Learn What Makes A Successful Profile</h5>
+                                <p>Listen to some recommendations and tools so that you get noticed by pet parents.</p>
+                            </div>
+                            <hr />
+                        </div>
+                        <div class="row align-items-center">
+                            <img src="../images/user-profile-svgrepo-com.png" class="col-md-3 col-sm-12 float-sm-start fixed-size" alt="user-profile-svgrepo-com.png" />
+                            <div class="col-md-9 col-sm-12 text-start">
+                                <h5>Create A Vendor Profile</h5>
+                                <p>Allow sellers to learn more about you. Personalize your vendor profile to fit your brand & display your important info</p>
+                            </div>
+                            <hr />
+                        </div>
+                        <div class="row align-items-center">
+                            <img src="../images/sell-product-svgrepo-com.png" class="col-md-3 col-sm-12 float-sm-start fixed-size" alt="sell-product-svgrepo-com.png" />
+                            <div class="col-md-9 col-sm-12 text-start">
+                                <h5>Post Your First Money-Maker</h5>
+                                <p>Learn how to setup a product and service listing to start selling.</p>
+                            </div>
+                            <hr />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="right-side check-out-right">
+                      <img src="../images/Graphic.png" alt="Graphic.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-2 p-2">
+            <div class="col-md">
+                <button class="next-profile-bottom" @onclick="OnGoNext">Next</button>
+            </div>
+        </div>
+    </div>
+</div>
+@code
+{
+    public void OnGoNext()
+    {
+        _navigationManager.NavigateTo($"/vendor/tips", true);
+    }
+}
