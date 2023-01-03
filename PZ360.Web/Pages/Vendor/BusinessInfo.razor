@@ -1,0 +1,211 @@
+﻿@page "/vendor/business-info"
+
+@inject NavigationManager _navigationManager
+
+<div class="row no-gutters top-menu align-items-center text-center">
+    <div class="col-8 menu-desk">
+        <a href="#"><img src="../images/paw.png" alt="paw.png" />Let's Start <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw.png" alt="paw.png" />Set Your Plan <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw.png" alt="paw.png" />Profile <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw.png" alt="paw.png" />Contact Info <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw.png" alt="paw.png" />Business Info <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw_gray.png" alt="paw_gray.png" />Categories <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw_gray.png" alt="paw_gray.png" />Checkout <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw_gray.png" alt="paw_gray.png" />Viola</a>
+    </div>
+    <div class="col-4 menu-mini">
+        <div class="row">
+            <a href="#"><img src="../images/paw.png" alt="paw.png" />Business Info <img src="../images/Separator.png" alt="Separator.png" /></a>
+            <span>4/6 Steps Complete!</span>
+        </div>
+
+    </div>
+</div>
+
+<div class="row no-gutters set-plan-bg">
+    <div class="col-md reg-content align-items-center text-center users-can-do">
+        <div class="row m-2 p-2">
+            <div class="col-md">
+                <button class="back-button" @onclick="OnGoBack">Back</button>
+                <div class="float-end p-0 m-0">
+                    <button class="btn-help me-3"><img src="../images/Question.png" /></button>
+                    <button class="btn-next" @onclick="OnGoNext">Next</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <div class="form-floating">
+                    <span class="title">Business Info</span>
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters align-items-center justify-content-center">
+            <div class="col-12 col-md-6">
+                <div class="row text-start">
+                    <span class="pb-2"><img src="../images/timeicon.png" class="pe-2" alt="timeicon.png" />Operating Hours</span>
+                    <hr />
+                    <div class="d-inline-flex">
+                        <input id="agree" type="checkbox" class="form-check" /><label class="p-2">Open 24/7</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 row no-gutters align-items-start text-start">
+                        <div class="row align-items-end">
+                            <div class="col-4 col-md-4">
+                                <span>Monday</span>
+                            </div>
+                            <div class="col-8 col-md-8 row">
+                                <div class="col-6 col-md-6">
+                                    <div class="profile-form-control">
+                                        <label>Open</label>
+                                        <input class="form-text" type="text" placeholder="00:00" />
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <div class="profile-form-control">
+                                        <label >Close</label>
+                                        <input class="form-text" type="text" placeholder="00:00" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-end">
+                            <div class="col-4 col-md-4">
+                                <span>Tuesday</span>
+                            </div>
+                            <div class="col-8 col-md-8 row">
+                                <div class="col-6 col-md-6">
+                                    <div class="profile-form-control">
+                                        <label>Open</label>
+                                        <input class="form-text" type="text" placeholder="00:00" />
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <div class="profile-form-control">
+                                        <label>Close</label>
+                                        <input class="form-text" type="text" placeholder="00:00" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="row align-items-end">
+                            <div class="col-4 col-md-4">
+                                <span>Wednesday</span>
+                            </div>
+                            <div class="col-8 col-md-8 row">
+                                <div class="col-6 col-md-6">
+                                    <div class="profile-form-control">
+                                        <label>Open</label>
+                                        <input class="form-text" type="text" placeholder="00:00" />
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <div class="profile-form-control">
+                                        <label>Close</label>
+                                        <input class="form-text" type="text" placeholder="00:00" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-end">
+                            <div class="col-4 col-md-4">
+                                <span>Thursday</span>
+                            </div>
+                            <div class="col-8 col-md-8 row">
+                                <div class="col-6 col-md-6">
+                                    <div class="profile-form-control">
+                                        <label>Open</label>
+                                        <input class="form-text" type="text" placeholder="00:00" />
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <div class="profile-form-control">
+                                        <label>Close</label>
+                                        <input class="form-text" type="text" placeholder="00:00" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 row no-gutters align-items-start text-start">
+                        <div class="row align-items-end">
+                            <div class="col-4 col-md-4">
+                                <span>Friday</span>
+                            </div>
+                            <div class="col-8 col-md-8 row">
+                                <div class="col-6 col-md-6">
+                                    <div class="profile-form-control">
+                                        <label>Open</label>
+                                        <input class="form-text" type="text" placeholder="00:00"  />
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <div class="profile-form-control">
+                                        <label>Close</label>
+                                        <input class="form-text" type="text" placeholder="00:00" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-end">
+                            <div class="col-4 col-md-4">
+                                <span>Saturday</span>
+                            </div>
+                            <div class="col-8 col-md-8 row">
+                                <div class="col-6 col-md-6">
+                                    <div class="profile-form-control">
+                                        <label>Open</label>
+                                        <input class="form-text" type="text" placeholder="00:00" />
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <div class="profile-form-control">
+                                        <label>Close</label>
+                                        <input class="form-text" type="text" placeholder="00:00" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-end">
+                            <div class="col-4 col-md-4">
+                                <span>Sunday</span>
+                            </div>
+                            <div class="col-8 col-md-8 row">
+                                <div class="col-6 col-md-6">
+                                    <div class="profile-form-control">
+                                        <label>Open</label>
+                                        <input class="form-text" type="text" placeholder="00:00" />
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <div class="profile-form-control">
+                                        <label>Close</label>
+                                        <input class="form-text" type="text" placeholder="00:00" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-2 p-2">
+            <div class="col-md">
+                <button class="next-profile-bottom" @onclick="OnGoNext">Next</button>
+            </div>
+        </div>
+    </div>
+</div>
+@code
+{
+    
+    public void OnGoNext()
+    {
+        _navigationManager.NavigateTo($"/vendor/categories", true);
+    }
+
+    public void OnGoBack()
+    {
+        _navigationManager.NavigateTo($"/vendor/contact-info", true);
+    }
+}
