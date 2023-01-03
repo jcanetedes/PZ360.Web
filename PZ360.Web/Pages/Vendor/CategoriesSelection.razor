@@ -1,0 +1,160 @@
+﻿@page "/vendor/profile-categories"
+
+@inject NavigationManager _navigationManager
+
+<div class="row no-gutters top-menu align-items-center text-center">
+    <div class="col-8 menu-desk">
+        <a href="#"><img src="../images/paw.png" alt="paw.png" />Let's Start <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw.png" alt="paw.png" />Set Your Plan <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw.png" alt="paw.png" />Profile <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw.png" alt="paw.png" />Contact Info <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw.png" alt="paw.png" />Business Info <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw.png" alt="paw.png" />Categories <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw_gray.png" alt="paw_gray.png" />Checkout <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw_gray.png" alt="paw_gray.png" />Viola</a>
+    </div>
+    <div class="col-4 menu-mini">
+        <div class="row">
+            <a href="#"><img src="../images/paw.png" alt="paw.png" />Categories <img src="../images/Separator.png" alt="Separator.png" /></a>
+            <span>6/6 Step Complete!</span>
+        </div>
+
+    </div>
+</div>
+
+<div class="row no-gutters set-plan-bg">
+    <div class="col-md reg-content align-items-center text-center">
+        <div class="row m-2 p-2">
+            <div class="col-md">
+                <button class="vendor-back-button">Back</button>
+                <button class="vendor-help-button"><img src="../images/Question.png" /></button>
+                <button class="vendor-next-button">Next</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <div class="form-floating">
+                    <h1>Categories</h1>
+                    <h4>Fill in the categories applicable to your business.</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters align-items-center justify-content-center">
+            <div class="col-md-6">
+                <div class="left-side profile-left vendor-profile">
+                    
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="profile-form-control">
+                                <label for="level" title="Level">Level</label>
+                                <RadzenDropDown id="level" Multiple="true" Chips="true" MaxSelectedLabels="20" AllowClear="true" AllowFiltering="true" FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" Data=@products @bind-Value=@products
+                                                  Class="w-100" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="profile-form-control">
+                                <label for="type" title="Type">Type</label>
+                                <RadzenDropDown id="type" Multiple="true" Chips="true" MaxSelectedLabels="20" AllowClear="true" AllowFiltering="true" FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" Data=@products @bind-Value=@products
+                                                Class="w-100" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="profile-form-control">
+                                <label for="mainsection" title="Type">Main Section Categories</label>
+                                <RadzenDropDown id="mainsection" Multiple="true" Chips="true" MaxSelectedLabels="20" AllowClear="true" AllowFiltering="true" FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" Data=@products @bind-Value=@products
+                                                Class="w-100" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-2 mr-4">
+                        <div class="col-8">
+                            <div class="row">
+                                <span>
+                                    <img src="../images/BusinessService.png" alt="businesservice.png" />My Business Provide Services
+                                </span>
+                               
+                            </div>
+                   
+                            
+                        </div>
+                        <div class="col">
+                            <input class="pz-float-right" type="checkbox" />
+                        </div>
+                        <hr />
+                    </div>
+                     <div class="row">
+                        <div class="col-md">
+                            <div class="profile-form-control">
+                                <label for="servicecategories" title="Service Categories">Service Categories</label>
+                                <RadzenDropDown id="servicecategories" Multiple="true" Chips="true" MaxSelectedLabels="20" AllowClear="true" AllowFiltering="true" FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" Data=@products @bind-Value=@products
+                                                Class="w-100" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="profile-form-control">
+                                <label for="servicetype" title="Service Type">Service Type</label>
+                                <RadzenDropDown id="servicetype" Multiple="true" Chips="true" MaxSelectedLabels="20" AllowClear="true" AllowFiltering="true" FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" Data=@products @bind-Value=@products
+                                                Class="w-100" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-2 mr-4">
+                        <div class="col-8">
+                            <div class="row">
+                                <span>
+                                    <img src="../images/veterinarycare.png" alt="veterinarycare.png" />My Business Provides Veterinary Care
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <input class="pz-float-right" type="checkbox" />
+                        </div>
+                        <hr />
+                    </div>
+                     <div class="row">
+                        <div class="col-md">
+                            <div class="profile-form-control">
+                                <label for="specialties" title="Type">Veterinary Specialties</label>
+                                <RadzenDropDown id="specialties" Multiple="true" Chips="true" MaxSelectedLabels="20" AllowClear="true" AllowFiltering="true" FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" Data=@products @bind-Value=@products
+                                                Class="w-100" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="profile-form-control">
+                                <label for="medicalspecialties" title="Type">Medical Specialties</label>
+                                <RadzenDropDown id="medicalspecialties" Multiple="true" Chips="true" MaxSelectedLabels="20" AllowClear="true" AllowFiltering="true" FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" Data=@products @bind-Value=@products
+                                                Class="w-100" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-2 p-2">
+            <div class="col-md">
+                <button class="next-profile-bottom">Next</button>
+            </div>
+        </div>
+    </div>
+</div>
+@code
+{
+    public IEnumerable<string> products = new List<string>()
+    {
+        "Test 1",
+        "TEst 2",
+        "Test 3",
+        "TEst 4",
+        "Test 5"
+    };
+    public IEnumerable<int> multipleValuesChip = new int[] { 1, 2, 3, 4, 5 };
+}

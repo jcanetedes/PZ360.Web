@@ -755,12 +755,18 @@ hr {
     border: 0px;
     background-color: transparent;
 }
+.pz-float-right
+{
+    margin-top:20px;
+    float:right;
+}
 
 .pz-editor {
     background-color: #252729 !important;
     height: 100% !important;
     min-height: 560px !important;
 }
+
 /*Mobile Responsive*/
 @media screen and (min-width:768px) {
     .left-side, .right-side {
