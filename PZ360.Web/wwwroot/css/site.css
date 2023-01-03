@@ -697,6 +697,70 @@ hr {
     width: 100%;
     max-width: 600px !important;
 }
+
+/*Vendor Profile*/
+.vendor-profile
+{
+    text-align:left;
+    padding-left:5em;
+    padding-right:5em;
+}
+.vendor-profile div div img
+{
+    margin:10px;
+    width:100%;
+    max-width:30px;
+}
+.vendor-profile .vendor-dragdrop 
+{
+    width: 100% !important;
+    max-width:600px !important;
+}
+
+.vendor-back-button {
+    color: #C1C1C1;
+    width: 70px;
+    height: 40px;
+    align-items: center;
+    background: linear-gradient(90deg, #363535 0%, #141414 100%);
+    border-radius: 27px;
+}
+.vendor-next-button {
+    color: #C1C1C1;
+    width: 70px;
+    align-items:center;
+    height: 40px;
+    background: linear-gradient(90deg, #01B4D9 0%, #1770B7 100%);
+    border-radius: 27px;
+}
+
+.vendor-help-button {
+    padding-right: 80px;
+    width: 55px;
+    margin: 0;
+    height: 55px;
+    border: 0px;
+    align-items: center;
+    border-radius: 50%;
+    background-color: transparent;
+}
+.vendor-contact-social
+{
+    padding-top: 6.3em !important;
+}
+.social-media img{
+    align-items: center;
+    min-width:25px;
+    min-height:25px;
+    border: 0px;
+    background-color: transparent;
+}
+
+.pz-editor {
+    background-color: #252729 !important;
+    height: 100% !important;
+    min-height: 560px !important;
+}
 /*Mobile Responsive*/
 @media screen and (min-width:768px) {
     .left-side, .right-side {
@@ -706,6 +770,12 @@ hr {
     {
         display:initial !important;
         float: right;
+    }
+    .vendor-next-button{
+        float:right;
+    }
+    .vendor-back-button{
+        float:left; 
     }
     .sign-in-content{
         height:100%;
@@ -807,6 +877,12 @@ hr {
     .left-side, .right-side {
         height: 100%;
     }
+    .vendor-next-button {
+        float: right;
+    }
+    .vendor-back-button {
+        float: left;
+    }
     .check-out-price-info, .check-out-price-info-bottom {
         display:initial !important;
         float: right;
@@ -866,6 +942,13 @@ hr {
         display: initial !important;
         float: right;
     }
+    .vendor-next-button {
+        float: right;
+    }
+
+    .vendor-back-button {
+        float: left;
+    }
     .sign-in-content {
         height: 100%;
     }
@@ -913,6 +996,13 @@ hr {
 @media screen and (min-width: 1156px) {
     .left-side, .right-side {
         height: 100%;
+    }
+    .vendor-next-button {
+        float: right;
+    }
+
+    .vendor-back-button {
+        float: left;
     }
     .check-out-price-info, .check-out-price-info-bottom {
         display: initial !important;
@@ -970,6 +1060,13 @@ hr {
         display: initial !important;
         float: right;
     }
+    .vendor-next-button {
+        float: right;
+    }
+
+    .vendor-back-button {
+        float: left;
+    }
     .sign-in-content {
         height: 100%;
     }
@@ -1021,6 +1118,13 @@ hr {
     .check-out-price-info, .check-out-price-info-bottom {
         display: initial !important;
         float: right;
+    }
+    .vendor-next-button {
+        float: right;
+    }
+
+    .vendor-back-button {
+        float: left;
     }
     .sign-in-content {
         height: 100%;

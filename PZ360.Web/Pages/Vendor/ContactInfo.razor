@@ -1,0 +1,202 @@
+﻿@page "/vendor/profile-contact"
+
+@inject NavigationManager _navigationManager
+
+<div class="row no-gutters top-menu align-items-center text-center">
+    <div class="col-8 menu-desk">
+        <a href="#"><img src="../images/paw.png" alt="paw.png" />Let's Start <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw.png" alt="paw.png" />Set Your Plan <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw.png" alt="paw.png" />Profile <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw.png" alt="paw.png" />Contact Info <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw_gray.png" alt="paw_gray.png" />Business Info <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw_gray.png" alt="paw_gray.png" />Categories <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw_gray.png" alt="paw_gray.png" />Checkout <img src="../images/Separator.png" alt="Separator.png" /></a>
+        <a href="#"><img src="../images/paw_gray.png" alt="paw_gray.png" />Viola</a>
+    </div>
+    <div class="col-4 menu-mini">
+        <div class="row">
+            <a href="#"><img src="../images/paw.png" alt="paw.png" />Contact Info <img src="../images/Separator.png" alt="Separator.png" /></a>
+            <span>4/6 Step Complete!</span>
+        </div>
+
+    </div>
+</div>
+
+<div class="row no-gutters set-plan-bg">
+    <div class="col-md reg-content align-items-center text-center">
+        <div class="row m-2 p-2">
+            <div class="col-md">
+                <button class="vendor-back-button">Back</button>
+                <button class="vendor-help-button"><img src="../images/Question.png" /></button>
+                <button class="vendor-next-button">Next</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <div class="form-floating">
+                    <h1>Contact Info</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters align-items-center justify-content-center">
+            <div class="col-md-6">
+                <div class="left-side profile-left vendor-profile">
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="row">
+                                <span><img src="../images/profilecontactinfo.png" alt="profilecontactinfo.png" />Profile Info</span>
+                                <hr />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="profile-form-control">
+                                <label for="website" title="Website">Website</label>
+                                <input class="form-text" type="text" id="website" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="profile-form-control">
+                                <label for="email" title="email">Email</label>
+                                <input class="form-text" type="text" id="email" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="profile-form-control">
+                                <label for="phone" title="Phone">Phone</label>
+                                <input class="form-text" type="text" id="phone" />
+                            </div>
+                        </div>
+                    </div>
+                     <div class="row">
+                        <div class="col-md">
+                            <div class="profile-form-control">
+                                <label for="address1" title="Address Line 1">Address Line 1</label>
+                                <input class="form-text" type="text" id="address1" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="profile-form-control">
+                                <label for="address2" title="Address Line 2">Address Line 2</label>
+                                <input class="form-text" type="text" id="address2" />
+                            </div>
+                        </div>
+                    </div>
+                     <div class="row">
+                        <div class="col-md">
+                            <div class="profile-form-control">
+                                <label for="city" title="City">City</label>
+                                <input class="form-text" type="text" id="city" />
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="profile-form-control">
+                                <label for="zipcode" title="Zipcode">Zipcode</label>
+                                <input class="form-text" type="text" id="zipcode" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="profile-form-control">
+                                <label for="state" title="State">State</label>
+                                <input class="form-text" type="text" id="state" />
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="profile-form-control">
+                                <label for="country" title="Country">Country</label>
+                                <input class="form-text" type="text" id="country" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="right-side profile-right vendor-profile">
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="row">
+                                <span><img src="../images/personinfo.png" alt="personinfo.png" />Person of Contact</span>
+                                <hr />
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="profile-form-control">
+                                <label for="firstname" title="firstname">First Name</label>
+                                <input class="form-text" type="text" id="firstname" />
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="profile-form-control">
+                                <label for="lastname" title="Last Name">Last Name</label>
+                                <input class="form-text" type="text" id="lastname" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="profile-form-control">
+                                <label for="email1" title="email">Email</label>
+                                <input class="form-text" type="text" id="email1" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="profile-form-control">
+                                <label for="phone1" title="Phone">Phone</label>
+                                <input class="form-text" type="text" id="phone1" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md ">
+                            <div class="row vendor-contact-social">
+                                <span><img src="../images/social.png" alt="social.png" />Social Media</span>
+                                <hr />
+                            </div>
+                            <div class="row d-flex">
+                                <div class="col d-flex m-1 social-media">
+                                    <img class="social-media" src="../images/fbsocial.png" />
+                                    <img class="social-media" src="../images/instasocial.png" />
+                                    <img class="social-media" src="../images/linkinsocial.png" />
+                                    <img class="social-media" src="../images/youtubesocial.png" />
+                                    <img class="social-media" src="../images/pinterestsocial.png" />
+                                    <img class="social-media" src="../images/twittersocial.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="profile-form-control">
+                                <label for="socialurl" title="URL">URL</label>
+                                <input class="form-text" type="text" id="socialurl" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-2 p-2">
+            <div class="col-md">
+                <button class="next-profile-bottom">Next</button>
+            </div>
+        </div>
+    </div>
+</div>
+@code
+{
+
+}
