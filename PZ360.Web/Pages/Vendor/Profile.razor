@@ -27,7 +27,7 @@
         <div class="row m-2 p-2">
             <div class="col-md">
                 <button class="help-profile-question"><img src="../images/Question.png" /></button>
-                <button class="next-profile-button">Next</button>
+                <button class="next-profile-button" @onclick="OnGoNext">Next</button>
             </div>
         </div>
         <div class="row">
@@ -124,7 +124,7 @@
         </div>
         <div class="row m-2 p-2">
             <div class="col-md">
-                <button class="next-profile-bottom">Next</button>
+                <button class="next-profile-bottom" @onclick="OnGoNext">Next</button>
             </div>
         </div>
     </div>
@@ -132,4 +132,8 @@
 @code
 {
     public int value = 1;
+    public void OnGoNext()
+    {
+        _navigationManager.NavigateTo($"/vendor/profile-contact", true);
+    }
 }

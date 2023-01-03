@@ -1,4 +1,4 @@
-﻿@page "/vendor/model-select"
+﻿@page "/vendor/select-model"
 
 @inject NavigationManager _navigationManager
 
@@ -173,11 +173,11 @@
 {
     public void OnGoNext()
     {
-        _navigationManager.NavigateTo($"/vendor/profile-setup", true);
+        _navigationManager.NavigateTo($"/vendor/checkout-space", true);
     }
 
     public void OnGoBack()
     {
-        _navigationManager.NavigateTo($"/vendor/setplan", true);
+        _navigationManager.NavigateTo($"/vendor/plan-selection", true);
     }
 }

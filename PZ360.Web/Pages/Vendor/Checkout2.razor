@@ -1,5 +1,6 @@
 ﻿@page "/vendor/checkout-storefront"
 
+@inject NavigationManager _navigationManager
 
 <div class="row no-gutters top-menu align-items-center text-center">
     <div class="col-7 menu-desk">
@@ -26,7 +27,7 @@
         <div class="row m-2 p-2">
             <div class="col-md">
 
-                <button class="back-checkout-button mt-2">Back</button>
+                <button class="back-checkout-button mt-2" @onclick="OnGoBack">Back</button>
                 <button class="help-checkout-question m-0"><img src="../images/Question.png" /></button>
                 <div class="row d-flex check-out-price-info">
                     <div class="col-md">
@@ -123,5 +124,8 @@
 </div>
 @code
 {
-
+    public void OnGoBack()
+    {
+        _navigationManager.NavigateTo($"/vendor/plan-selection", true);
+    }
 }
