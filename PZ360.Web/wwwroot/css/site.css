@@ -88,7 +88,10 @@ ul {
     margin-left: 2.0em;
     color: gray;
 }
-
+.no-gutters > .col, .no-gutters > [class*="col-"] {
+    padding-right: 10px;
+    padding-left: 10px;
+}
 .no-gutters {
     margin-right: 0;
     margin-left: 0;

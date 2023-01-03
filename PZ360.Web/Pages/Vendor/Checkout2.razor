@@ -31,7 +31,7 @@
                 <button class="help-checkout-question m-0"><img src="../images/Question.png" /></button>
                 <div class="row d-flex check-out-price-info">
                     <div class="col-md">
-                        <p>Total: $99 Annually (Subscription)<button class="proceed-checkout-button">Proceed to Purchase</button></p>
+                        <p>Total: $99 Annually (Subscription)<button @onclick="OnPurchase" class="proceed-checkout-button">Proceed to Purchase</button></p>
                     </div>
 
                 </div>
@@ -112,7 +112,7 @@
                                 <p>Total: $99 Annually (Subscription)</p>
                             </div>
                             <div class="col-md">
-                                <button class="proceed-checkout-button">Proceed to Purchase</button>
+                                <button @onclick="OnPurchase" class="proceed-checkout-button">Proceed to Purchase</button>
                             </div>
                         </div>
                     </div>
@@ -127,5 +127,9 @@
     public void OnGoBack()
     {
         _navigationManager.NavigateTo($"/vendor/plan-selection", true);
+    }
+    public void OnPurchase()
+    {
+        _navigationManager.NavigateTo($"/vendor/viola-storefront", true);
     }
 }
