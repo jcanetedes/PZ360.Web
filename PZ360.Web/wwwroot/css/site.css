@@ -335,6 +335,7 @@ input.form-control {
                 font-size: 10px;
             }
 
+.btn-help,
 .help-question {
     width: 55px;
     height: 55px;
@@ -386,6 +387,7 @@ input.form-control {
     max-width: 400px;
 }
 
+.btn-next,
 .next-profile-button {
     color: #C1C1C1;
     width: 70px;

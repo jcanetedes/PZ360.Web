@@ -27,7 +27,10 @@
         <div class="row m-2 p-2">
             <div class="col-md">
                 <button class="back-button" @onclick="OnGoBack">Back</button>
-                <button class="next-profile-bottom" @onclick="OnGoNext">Next</button>
+                <div class="float-end p-0 m-0">
+                    <button class="btn-help me-3"><img src="../images/Question.png" /></button>
+                    <button class="btn-next" @onclick="OnGoNext">Next</button>
+                </div>
             </div>
         </div>
         <div class="row">
