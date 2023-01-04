@@ -214,7 +214,7 @@ input.form-control {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 15px 25px;
+    padding: 15px 35px;
     color: #C1C1C1;
     width: 124px;
     height: 52px;
@@ -226,7 +226,7 @@ input.form-control {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 15px 25px;
+    padding: 15px 45px;
     gap: 5px;
     color: #C1C1C1;
     width: 124px;
@@ -384,7 +384,7 @@ input.form-control {
     color: #C1C1C1;
     width: 154px;
     height: 40px;
-    background: linear-gradient(90deg, #01B4D9 0%, #1770B7 100%);
+    background: linear-gradient(90deg, #00AABC 0%, #00586D 100%);
     border-radius: 27px;
     border: 0;
     margin-bottom: .45em;
@@ -529,6 +529,10 @@ input.form-control {
         width: 100%;
         max-width: 400px;
     }
+.pz-support {
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
 
 /*Checkout*/
 .check-out-content {
