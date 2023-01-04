@@ -122,21 +122,27 @@ ul {
     }
 
     .form-floating h1 {
-        color: #C1C1C1;
-        margin-top: 1.0em;
-        padding-bottom: 10px;
-        font-size: 28px;
+        color: #F6F6F6;
+        /*font-family: 'Roboto';*/
+        font-style: normal;
+        font-size: 64px;
+        font-weight: 700;
     }
 
     .form-floating h4 {
         color: #C1C1C1;
-        padding-bottom: 15px;
+        /*font-family: 'Roboto';*/
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
     }
-
-    .form-floating .title {
-        font-weight: 700;
-        font-size: 64px;
-    }
+/*h5 {
+    color: #FFFFFF !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 24px !important;
+    text-transform: capitalize;
+}*/
 
 .form-control {
     background-color: transparent;
@@ -225,6 +231,10 @@ input.form-control {
     padding: 50px;
 }
 
+.border-right {
+    border-right: 0px !important;
+}
+
 
 /*Page Menu*/
 .top-menu {
@@ -298,6 +308,11 @@ input.form-control {
     padding-top: 2.5em;
 }
 
+    .plan-dark h6, .plan-bright h6 {
+        color: #F6F6F6;
+        font-size: 18px;
+    }
+
     .plan-dark h5, .plan-bright h5 {
         color: #52C4CA;
         font-size: 12px;
@@ -315,11 +330,14 @@ input.form-control {
     .plan-dark h1, .plan-bright h1 {
         color: #C1C1C1;
         font-size: 90px;
+        letter-spacing:0 !important;
+        line-height: 0.70 !important;
     }
 
-        .plan-bright h1 span {
-            vertical-align: top;
-            font-size: 12px;
+        .plan-bright h1 span, .plan-dark h1 span {
+            vertical-align: top !important;
+            font-size: 12px !important;
+            margin-left: -13px !important;
         }
 
     .plan-bright div, .plan-dark div {
@@ -334,8 +352,9 @@ input.form-control {
         }
 
             .plan-bright div ul li span, .plan-dark div ul li span {
-                vertical-align: top;
-                font-size: 10px;
+                vertical-align: top !important;
+                font-size: 10px !important;
+                margin-left: -13px !important;
             }
 
 .btn-help,
@@ -583,6 +602,7 @@ input.form-control {
     background: linear-gradient(90deg, #01B4D9 0%, #1770B7 100%);
     border-radius: 27px;
 }
+
 h1, h2, h3, h4, h5, h6 {
     color: #C1C1C1;
 }
@@ -841,6 +861,9 @@ hr {
         justify-content: center;
         text-align: center;
     }
+    .border-right {
+        border-right: 0px !important;
+    }
 }
 
 
@@ -881,6 +904,9 @@ hr {
 
     .plan-dark, .plan-bright {
         height: 100%;
+    }
+    .border-right {
+        border-right: 0px !important;
     }
 }
 
@@ -943,6 +969,9 @@ hr {
     .plan-dark, .plan-bright {
         height: 100vh;
     }
+    .border-right {
+        border-right: 1px solid rgba(193, 193, 193, 0.25) !important;
+    }
 }
 
 @media screen and (min-width: 900px) {
@@ -1001,6 +1030,9 @@ hr {
 
     .plan-dark, .plan-bright {
         height: 100vh;
+    }
+    .border-right {
+        border-right: 1px solid rgba(193, 193, 193, 0.25) !important;
     }
 }
 
@@ -1062,6 +1094,9 @@ hr {
     .plan-dark, .plan-bright {
         height: 100vh;
     }
+    .border-right {
+        border-right: 1px solid rgba(193, 193, 193, 0.25) !important;
+    }
 }
 @media screen and (min-width: 1280px) {
     .left-side, .right-side {
@@ -1120,6 +1155,9 @@ hr {
 
     .plan-dark, .plan-bright {
         height: 100vh;
+    }
+    .border-right {
+        border-right: 1px solid rgba(193, 193, 193, 0.25) !important;
     }
 }
 @media screen and (min-width: 1400px) {
@@ -1180,6 +1218,9 @@ hr {
     .plan-dark, .plan-bright {
         height: 100vh;
     }
+    .border-right {
+        border-right: 1px solid rgba(193, 193, 193, 0.25) !important;
+    }
 }
 @media screen and (min-width: 1440px) {
     .left-side, .right-side {
@@ -1231,6 +1272,9 @@ hr {
 
     .plan-dark, .plan-bright {
         height: 100vh;
+    }
+    .border-right {
+        border-right: 1px solid rgba(193, 193, 193, 0.25) !important;
     }
 }
 @media screen and (min-width: 1600px) {
@@ -1285,6 +1329,9 @@ hr {
     .plan-dark, .plan-bright {
         height: 100vh;
     }
+    .border-right {
+        border-right: 1px solid rgba(193, 193, 193, 0.25) !important;
+    }
 }
 @media screen and (min-width: 1680px) {
     .left-side, .right-side {
@@ -1338,6 +1385,9 @@ hr {
     .plan-dark, .plan-bright {
         height: 100vh;
     }
+    .border-right {
+        border-right: 1px solid rgba(193, 193, 193, 0.25) !important;
+    }
 }
 @media screen and (min-width: 1920px) {
     .left-side, .right-side {
@@ -1389,6 +1439,9 @@ hr {
 
     .plan-dark, .plan-bright {
         height: 100vh;
+    }
+    .border-right {
+        border-right: 1px solid rgba(193, 193, 193, 0.25) !important;
     }
 }
 
