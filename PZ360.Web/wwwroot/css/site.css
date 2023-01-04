@@ -310,7 +310,7 @@ input.form-control {
 
     .plan-dark h6, .plan-bright h6 {
         color: #F6F6F6;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .plan-dark h5, .plan-bright h5 {
@@ -342,7 +342,7 @@ input.form-control {
 
     .plan-bright div, .plan-dark div {
         text-align: left;
-        margin-left: 1.0em;
+        margin-left: 0 !important;
     }
 
         .plan-bright div ul, .plan-dark div ul {
@@ -609,6 +609,7 @@ h1, h2, h3, h4, h5, h6 {
 
 hr {
     color: #C1C1C1;
+    box-sizing:border-box;
 }
 
 /*Set Plan Vendor*/
@@ -664,8 +665,7 @@ hr {
             }
 
     .vendor-dark h5, vendor-bright h5, .vendor-spaces-blue h5, .vendor-spaces-green h5 {
-        font-size: 14px !important;
-        margin-top: 10px;
+        font-size: 12px !important;
     }
 
     .vendor-dark h3, .vendor-bright h3, .vendor-spaces-blue h3, .vendor-spaces-green h3 {
@@ -693,7 +693,7 @@ hr {
 
     .vendor-dark h1, .vendor-bright h1, .vendor-spaces-blue h1, .vendor-spaces-green h1 {
         color: #C1C1C1;
-        font-size: 65px;
+        font-size: 55px;
         text-align: center;
     }
 
@@ -724,11 +724,8 @@ hr {
 }
 
 /*Vendor Profile*/
-.vendor-profile
-{
-    text-align:left;
-    padding-left:5em;
-    padding-right:5em;
+.vendor-profile {
+    text-align: left;
 }
 .vendor-profile div div img
 {
@@ -789,7 +786,7 @@ hr {
 .pz-editor {
     background-color: #252729 !important;
     height: 100% !important;
-    min-height: 560px !important;
+    min-height: 497px !important;
 }
 
 /*Mobile Responsive*/
@@ -816,6 +813,10 @@ hr {
     }
     .set-plan-bg {
         height: 100%;
+    }
+    .vendor-content{
+        margin-left:5em;
+        margin-right: 5em;
     }
     .reg-content {
         width: 100%;
