@@ -394,13 +394,16 @@ input.form-control {
     color: #C1C1C1;
 }
 
-    .profile-right div div span {
+    .profile-right div div span, .profile-left div div span {
         margin-bottom: 5px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #F6F6F6;
     }
 
-        .profile-right div div span img {
-            width: 20px;
-            height: 20px;
+        .profile-right div div span img, .profile-left div div span img {
+            width: 25px;
+            height: 22px;
             margin-right: 10px;
         }
 
@@ -786,7 +789,15 @@ hr {
 .pz-editor {
     background-color: #252729 !important;
     height: 100% !important;
-    min-height: 497px !important;
+    min-height: 530px !important;
+}
+
+.model-name {
+    color: #FFFFFF;
+}
+.model-btn {
+    color: #C1C1C1;
+    cursor: pointer;
 }
 
 /*Mobile Responsive*/
@@ -815,8 +826,8 @@ hr {
         height: 100%;
     }
     .vendor-content{
-        margin-left:5em;
-        margin-right: 5em;
+        margin-left:3em;
+        margin-right: 3em;
     }
     .reg-content {
         width: 100%;
