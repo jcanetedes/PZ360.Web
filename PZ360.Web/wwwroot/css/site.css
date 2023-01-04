@@ -296,6 +296,7 @@ input.form-control {
     background-color: #060606;
 }
 
+.btn-back,
 .back-button {
     color: #C1C1C1;
     width: 70px;
@@ -369,7 +370,15 @@ input.form-control {
                 margin-left: -13px !important;
             }
 
-.btn-help,
+.btn-help {
+    background: #141414;
+    box-shadow: 0px 0px 10px rgb(67 67 67 / 58%);
+    border-radius: 30px;
+    height: 40px;
+    width: 40px;
+    border: 0px;
+}
+
 .help-question {
     width: 55px;
     height: 55px;
