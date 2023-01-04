@@ -280,6 +280,10 @@ input.form-control {
         display: none;
     }
 
+    .hr-sm {
+        display: none;
+    }
+
 /*Set Plan*/
 .reg-content {
     width: 100%;
@@ -473,8 +477,8 @@ input.form-control {
 }
 
     .profile-acct-third-party img {
-        width: 60px;
-        height: 50px;
+        width: 53px !important;
+        height: 53px !important;
     }
 
 .profile-form-control {
@@ -887,6 +891,9 @@ hr {
     .border-right {
         border-right: 0px !important;
     }
+    .hr-sm {
+        display: initial;
+    }
 }
 
 
@@ -930,6 +937,9 @@ hr {
     }
     .border-right {
         border-right: 0px !important;
+    }
+    .hr-sm {
+        display: initial;
     }
 }
 
@@ -995,6 +1005,9 @@ hr {
     .border-right {
         border-right: 1px solid rgba(193, 193, 193, 0.25) !important;
     }
+    .hr-sm {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 900px) {
@@ -1056,6 +1069,9 @@ hr {
     }
     .border-right {
         border-right: 1px solid rgba(193, 193, 193, 0.25) !important;
+    }
+    .hr-sm {
+        display: none;
     }
 }
 
@@ -1120,6 +1136,9 @@ hr {
     .border-right {
         border-right: 1px solid rgba(193, 193, 193, 0.25) !important;
     }
+    .hr-sm {
+        display: none;
+    }
 }
 @media screen and (min-width: 1280px) {
     .left-side, .right-side {
@@ -1181,6 +1200,9 @@ hr {
     }
     .border-right {
         border-right: 1px solid rgba(193, 193, 193, 0.25) !important;
+    }
+    .hr-sm {
+        display: none;
     }
 }
 @media screen and (min-width: 1400px) {
@@ -1244,6 +1266,9 @@ hr {
     .border-right {
         border-right: 1px solid rgba(193, 193, 193, 0.25) !important;
     }
+    .hr-sm {
+        display: none;
+    }
 }
 @media screen and (min-width: 1440px) {
     .left-side, .right-side {
@@ -1298,6 +1323,9 @@ hr {
     }
     .border-right {
         border-right: 1px solid rgba(193, 193, 193, 0.25) !important;
+    }
+    .hr-sm {
+        display: none;
     }
 }
 @media screen and (min-width: 1600px) {
@@ -1355,6 +1383,9 @@ hr {
     .border-right {
         border-right: 1px solid rgba(193, 193, 193, 0.25) !important;
     }
+    .hr-sm {
+        display: none;
+    }
 }
 @media screen and (min-width: 1680px) {
     .left-side, .right-side {
@@ -1411,6 +1442,9 @@ hr {
     .border-right {
         border-right: 1px solid rgba(193, 193, 193, 0.25) !important;
     }
+    .hr-sm {
+        display: none;
+    }
 }
 @media screen and (min-width: 1920px) {
     .left-side, .right-side {
@@ -1465,6 +1499,9 @@ hr {
     }
     .border-right {
         border-right: 1px solid rgba(193, 193, 193, 0.25) !important;
+    }
+    .hr-sm {
+        display: none;
     }
 }
 

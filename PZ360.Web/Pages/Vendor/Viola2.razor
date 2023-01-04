@@ -26,7 +26,7 @@
     <div class="col-md reg-content align-items-center text-center">
         <div class="row m-2 p-2">
             <div class="col-md">
-                <button class="back-to-login">Back to Home</button>
+                <button class="back-to-login" @onclick="BackToHome">Back to Home</button>
             </div>
         </div>
         <div class="row">
@@ -67,7 +67,7 @@
                     <p>
                         Have questions or issues?
                         <br />
-                        Contact <a class="pz-support" href="#">support@petzone360.com</a>
+                        Contact <u><a class="pz-support" href="#">support@petzone360.com</a></u>
                         <br />
                         to get assistance with your account.
                         <br />
@@ -85,5 +85,8 @@
 </div>
 @code
 {
-
+    public void BackToHome()
+    {
+        _navigationManager.NavigateTo($"/vendor/intro", true);
+    }
 }
