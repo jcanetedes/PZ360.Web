@@ -136,6 +136,14 @@ ul {
         font-weight: 500;
         font-size: 36px;
     }
+
+    .form-floating h5 {
+        color: #C1C1C1;
+        /*font-family: 'Roboto';*/
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+    }
 /*h5 {
     color: #FFFFFF !important;
     font-style: normal !important;
@@ -782,7 +790,6 @@ hr {
 }
 .pz-float-right
 {
-    margin-top:20px;
     float:right;
 }
 
